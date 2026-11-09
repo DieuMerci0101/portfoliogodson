@@ -1,5 +1,5 @@
 import { ArrowUp } from 'lucide-react'
-import { navLinks, profile, socials } from '../data/profile'
+import { navLinks, profile } from '../data/profile'
 import { SocialLinks } from './SocialLinks'
 
 export function Footer() {
@@ -37,7 +37,7 @@ export function Footer() {
               </div>
             </div>
             <div>
-              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/35">Plus</p>
+              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/35">Liens</p>
               <div className="mt-4 flex flex-col gap-2.5">
                 {navLinks.slice(3).map((link) => (
                   <a
@@ -76,9 +76,6 @@ export function Footer() {
           <p className="font-display text-[clamp(3.2rem,15vw,12.5rem)] font-bold leading-[0.8] tracking-[-0.06em] text-outline">
             GODSON
           </p>
-          <span className="absolute right-0 top-0 hidden font-mono text-[9px] uppercase tracking-[0.2em] text-ink/35 md:block">
-            {socials.length} réseaux · 1 passion
-          </span>
         </div>
 
         <div className="mt-8 flex flex-col gap-4 border-t border-line pt-5 text-[11px] text-ink/45 sm:flex-row sm:items-center sm:justify-between">

@@ -9,11 +9,9 @@ import { ScrollProgress } from './components/ScrollProgress'
 import { marqueeTech } from './data/profile'
 import { About } from './sections/About'
 import { Contact } from './sections/Contact'
-import { Experience } from './sections/Experience'
 import { Hero } from './sections/Hero'
 import { Projects } from './sections/Projects'
 import { Services } from './sections/Services'
-import { Skills } from './sections/Skills'
 
 function TechStrip() {
   return (
@@ -53,8 +51,6 @@ export default function App() {
         <About />
         <Projects />
         <Services />
-        <Skills />
-        <Experience />
         <Contact />
       </main>
 

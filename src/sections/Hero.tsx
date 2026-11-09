@@ -55,22 +55,16 @@ export function Hero({ ready }: HeroProps) {
         <span className="pointer-events-none absolute left-3 top-1/2 hidden -translate-y-1/2 font-mono text-[9px] uppercase tracking-[0.42em] text-ink/20 [writing-mode:vertical-rl] xl:block">
           Portfolio · 2026
         </span>
-        <span className="pointer-events-none absolute right-3 top-1/2 hidden -translate-y-1/2 font-mono text-[9px] uppercase tracking-[0.42em] text-ink/20 [writing-mode:vertical-rl] xl:block">
-          Disponible à plein temps
-        </span>
 
         <div className="relative z-10 flex flex-col items-center px-5 pt-24 text-center md:pt-28 lg:pt-32">
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={ready ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: EASE }}
-            className="flex items-center gap-2 rounded-full border border-ink/10 bg-paper-soft/70 px-3.5 py-2 font-mono text-[9px] uppercase tracking-[0.18em] text-ink/55 backdrop-blur"
+            className="font-mono text-[9px] uppercase tracking-[0.22em] text-ink/50"
           >
-            <span className="size-2 rounded-full bg-olive animate-pulse-dot" />
-            {profile.availability}
-            <span className="text-ink/25">·</span>
-            <span className="text-ink/40">{profile.location}</span>
-          </motion.div>
+            Développeur full-stack <span className="text-accent">·</span> Lomé, Togo
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -159,15 +153,10 @@ export function Hero({ ready }: HeroProps) {
 
         <div className="absolute bottom-20 right-8 z-30 hidden flex-col items-end gap-5 lg:flex">
           <SocialLinks size="sm" />
-          <div className="text-right">
-            <p className="flex items-center justify-end gap-1.5 font-mono text-[9px] uppercase tracking-[0.16em] text-ink/55">
-              <MapPin className="size-3 text-accent" />
-              {profile.location}
-            </p>
-            <p className="mt-1.5 font-mono text-[8px] uppercase tracking-[0.16em] text-ink/35">
-              GMT · Ouvert aux opportunités
-            </p>
-          </div>
+          <p className="flex items-center justify-end gap-1.5 font-mono text-[9px] uppercase tracking-[0.16em] text-ink/55">
+            <MapPin className="size-3 text-accent" />
+            {profile.location}
+          </p>
         </div>
 
         <a
@@ -182,7 +171,7 @@ export function Hero({ ready }: HeroProps) {
 
         <div className="relative z-30 px-5 pb-8 pt-8 text-center lg:hidden">
           <p className="font-mono text-[9px] uppercase tracking-[0.22em] text-accent">
-            {profile.role}
+            Développeur full-stack · Lomé
           </p>
           <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-ink/60">
             {profile.tagline}
@@ -203,16 +192,6 @@ export function Hero({ ready }: HeroProps) {
             </a>
           </div>
           <SocialLinks className="mt-6 justify-center" size="sm" />
-          <p className="mt-5 flex items-center justify-center gap-4 font-mono text-[8px] uppercase tracking-[0.16em] text-ink/40">
-            <span className="flex items-center gap-1.5">
-              <span className="size-1.5 rounded-full bg-olive animate-pulse-dot" />
-              {profile.availability}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <MapPin className="size-3 text-accent" />
-              {profile.location}
-            </span>
-          </p>
         </div>
 
         <div className="pointer-events-none absolute bottom-0 left-1/2 hidden h-24 w-24 -translate-x-1/2 translate-y-1/2 rounded-full bg-accent/20 blur-2xl lg:block" />

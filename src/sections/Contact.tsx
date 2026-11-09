@@ -33,7 +33,7 @@ export function Contact() {
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.045]" />
 
         <div className="relative">
-          <SectionLabel index="06" label="Contact" dark />
+          <SectionLabel index="04" label="Contact" dark />
 
           <div className="mt-8 md:mt-10">
             <Reveal>
@@ -51,8 +51,8 @@ export function Contact() {
             <div className="lg:col-span-6">
               <Reveal delay={0.1}>
                 <p className="max-w-md text-sm leading-relaxed text-paper/55 md:text-base">
-                  Disponible à plein temps pour concevoir votre prochaine application web,
-                  renforcer votre équipe ou donner vie à une idée. Parlons-en simplement.
+                  Une idée, un projet ou une simple question ? Écrivez-moi, je vous répondrai
+                  avec plaisir.
                 </p>
               </Reveal>
 
@@ -184,18 +184,6 @@ export function Contact() {
                   </Reveal>
                 ))}
               </div>
-
-              <Reveal delay={0.4}>
-                <div className="mt-4 flex items-center justify-between gap-4 rounded-xl border border-dashed border-paper/15 px-4 py-3.5">
-                  <span className="flex items-center gap-2 font-mono text-[8px] uppercase tracking-[0.14em] text-paper/45">
-                    <span className="size-1.5 rounded-full bg-olive animate-pulse-dot" />
-                    {profile.availability}
-                  </span>
-                  <span className="font-mono text-[8px] uppercase tracking-[0.14em] text-paper/30">
-                    Réponse sous 24h
-                  </span>
-                </div>
-              </Reveal>
             </div>
           </div>
 

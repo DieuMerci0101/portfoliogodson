@@ -33,8 +33,7 @@ export function Services() {
 
               <Reveal delay={0.15}>
                 <p className="mt-6 max-w-sm text-sm leading-relaxed text-paper/50">
-                  Une idée, un besoin, un produit à lancer ? Je vous accompagne de la conception
-                  à la mise en ligne, avec une approche simple et rigoureuse.
+                  Une idée ou un besoin ? Je vous accompagne de la conception à la mise en ligne.
                 </p>
               </Reveal>
 
@@ -47,18 +46,6 @@ export function Services() {
                   Discuter de votre projet
                   <ArrowUpRight className="size-4" />
                 </a>
-              </Reveal>
-
-              <Reveal delay={0.25}>
-                <div className="mt-10 flex items-center gap-4 border-t border-paper/10 pt-5">
-                  <span className="font-display text-4xl font-semibold">4</span>
-                  <span className="font-mono text-[9px] uppercase leading-relaxed tracking-[0.14em] text-paper/40">
-                    domaines
-                    <br />
-                    d'expertise
-                  </span>
-                  <span className="ml-auto text-2xl text-accent">✳</span>
-                </div>
               </Reveal>
             </div>
           </div>

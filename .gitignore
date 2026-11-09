@@ -24,5 +24,5 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Temporary verification files
-_preview_*
+# Local verification screenshots
+previews/

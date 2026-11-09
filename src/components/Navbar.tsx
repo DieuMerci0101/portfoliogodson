@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { navLinks, profile, socials } from '../data/profile'
+import { navLinks, profile } from '../data/profile'
 import { EASE } from '../lib/motion'
 import { Magnetic } from './Magnetic'
 
@@ -87,11 +87,6 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2.5">
-            <span className="hidden items-center gap-2 rounded-full border border-ink/10 bg-paper-soft/70 px-3 py-2 font-mono text-[9px] uppercase tracking-[0.14em] text-ink/60 xl:flex">
-              <span className="size-2 rounded-full bg-olive animate-pulse-dot" />
-              Disponible
-            </span>
-
             <Magnetic className="hidden sm:block" strength={0.18}>
               <a
                 href="#contact"
@@ -165,32 +160,19 @@ export function Navbar() {
               ))}
             </nav>
 
-            <div className="relative flex flex-col gap-5 border-t border-paper/10 px-6 py-6">
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <a
-                  href={`mailto:${profile.email}`}
-                  className="font-mono text-[11px] uppercase tracking-[0.12em] text-paper/65 hover:text-paper"
-                >
-                  {profile.email}
-                </a>
-                <span className="flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.14em] text-paper/55">
-                  <span className="size-2 rounded-full bg-accent animate-pulse-dot" />
-                  {profile.availability}
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {socials.map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-full border border-paper/20 px-3 py-2 font-mono text-[9px] uppercase tracking-[0.12em] text-paper/70 transition hover:border-accent hover:bg-accent hover:text-paper"
-                  >
-                    {social.name}
-                  </a>
-                ))}
-              </div>
+            <div className="relative flex flex-col gap-4 border-t border-paper/10 px-6 py-6">
+              <a
+                href={`mailto:${profile.email}`}
+                className="w-fit font-mono text-[11px] uppercase tracking-[0.12em] text-paper/65 hover:text-paper"
+              >
+                {profile.email}
+              </a>
+              <a
+                href={`tel:${profile.phoneRaw}`}
+                className="w-fit font-mono text-[11px] uppercase tracking-[0.12em] text-paper/65 hover:text-paper"
+              >
+                {profile.phone}
+              </a>
             </div>
           </motion.div>
         )}

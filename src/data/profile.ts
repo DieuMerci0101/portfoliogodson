@@ -4,32 +4,12 @@ export const profile = {
   fullName: 'Esso-wazam Godson PATAM',
   role: 'Développeur Full-Stack',
   tagline:
-    "Je conçois des applications web performantes, évolutives et soignées — du back-end à l'interface.",
-  bio: "Développeur Full-Stack passionné par la conception et le développement d'applications web performantes, évolutives et maintenables. J'ai une expérience pratique dans des projets intégrant le front-end et le back-end, ainsi que des compétences en design graphique, montage vidéo et création de contenus numériques assistée par l'IA.",
+    "Je conçois des sites et applications web rapides, soignés et pensés pour l'utilisateur.",
+  bio: "Développeur full-stack basé à Lomé, j'aide les marques et les entrepreneurs à transformer leurs idées en applications web claires, rapides et agréables à utiliser.",
   location: 'Lomé, Togo',
-  availability: 'Disponible à plein temps',
   email: 'patgodson01@gmail.com',
   phone: '+228 70 11 89 93',
   phoneRaw: '+22870118993',
-  birth: '31/10/2005',
-  nationality: 'Togolaise',
-  languages: [
-    { name: 'Français', level: 'Courant' },
-    { name: 'Anglais', level: 'Intermédiaire' },
-  ],
-  stats: [
-    { value: 2, suffix: '+', label: "années d'expérience" },
-    { value: 6, suffix: '+', label: 'projets déployés' },
-    { value: 2, suffix: '', label: 'entreprises' },
-    { value: 100, suffix: '%', label: 'engagement' },
-  ],
-  atouts: [
-    'Polyvalence technique',
-    'Compréhension des bases de données',
-    'Maîtrise du front-end & back-end',
-    'Créativité & sens du détail',
-  ],
-  interests: ['Lecture', 'Football', 'Voyage', 'Musique', 'Photographie'],
 }
 
 export const socials = [
@@ -75,8 +55,7 @@ export const navLinks = [
   { label: 'À propos', href: '#apropos', index: '01' },
   { label: 'Projets', href: '#projets', index: '02' },
   { label: 'Services', href: '#services', index: '03' },
-  { label: 'Parcours', href: '#parcours', index: '04' },
-  { label: 'Contact', href: '#contact', index: '05' },
+  { label: 'Contact', href: '#contact', index: '04' },
 ]
 
 export type ProjectCategory = 'Tous' | 'Full-stack' | 'Front-end'
@@ -168,9 +147,9 @@ export const projects: Project[] = [
 export const services = [
   {
     number: '01',
-    title: 'Développement web full-stack',
+    title: 'Sites & applications web',
     description:
-      'Sites et applications sur mesure avec React, Next.js, Node.js et NestJS. Du prototype à la mise en production.',
+      'Des sites et applications sur mesure, du premier écran à la mise en production.',
     tags: ['React', 'Next.js', 'NestJS'],
     icon: 'code',
   },
@@ -178,124 +157,25 @@ export const services = [
     number: '02',
     title: 'API & back-end',
     description:
-      'Conception d’API REST robustes, authentification, bases de données SQL/NoSQL et logique métier fiable.',
-    tags: ['FastAPI', 'PostgreSQL', 'JWT'],
+      'Des API solides et des bases de données bien pensées pour faire tourner votre produit.',
+    tags: ['API REST', 'PostgreSQL', 'Auth'],
     icon: 'server',
   },
   {
     number: '03',
     title: 'Design & contenus',
     description:
-      'Interfaces UI/UX, identités visuelles, affiches, montage vidéo et contenus numériques assistés par l’IA.',
+      'Des interfaces claires, des identités visuelles et des contenus qui donnent envie.',
     tags: ['UI/UX', 'Design', 'Vidéo'],
     icon: 'palette',
   },
   {
     number: '04',
-    title: 'Support & maintenance',
+    title: 'Maintenance & suivi',
     description:
-      'Diagnostic, maintenance informatique, optimisation des performances et accompagnement technique.',
-    tags: ['Support IT', 'Docker', 'Optimisation'],
+      'Un produit qui reste rapide, fiable et à jour, même après la mise en ligne.',
+    tags: ['Support', 'Optimisation', 'Docker'],
     icon: 'wrench',
-  },
-] as const
-
-export const skillGroups = [
-  {
-    title: 'Front-end',
-    icon: 'layout',
-    accent: 'terracotta',
-    skills: ['HTML', 'CSS', 'JavaScript (ES6+)', 'React.js', 'Next.js', 'Angular', 'Tailwind CSS'],
-  },
-  {
-    title: 'Back-end',
-    icon: 'server',
-    accent: 'olive',
-    skills: ['Node.js', 'NestJS', 'Python (FastAPI)', 'Java (Spring Boot)', 'API REST', 'JWT'],
-  },
-  {
-    title: 'Bases de données',
-    icon: 'database',
-    accent: 'ochre',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'SQLAlchemy', 'Supabase', 'Firebase'],
-  },
-  {
-    title: 'DevOps & outils',
-    icon: 'terminal',
-    accent: 'ink',
-    skills: ['Docker', 'Git / GitHub', 'Vercel', 'Netlify', 'Tests unitaires', 'Méthodes agiles'],
-  },
-  {
-    title: 'Design & audiovisuel',
-    icon: 'palette',
-    accent: 'terracotta',
-    skills: ['Conception graphique', 'Affiches', 'Montage vidéo', 'Contenus IA', 'Photographie'],
-  },
-  {
-    title: 'Savoir-être',
-    icon: 'sparkles',
-    accent: 'olive',
-    skills: ['Polyvalence', 'Esprit analytique', 'Organisation', 'Travail en équipe', 'Créativité'],
-  },
-] as const
-
-export const experience = [
-  {
-    role: 'Développeur Full-Stack',
-    company: 'Numerum Dev Center',
-    location: 'Adidogomé, Lomé',
-    period: 'Juin 2026 — Sept. 2026',
-    summary:
-      'Conception et développement de deux plateformes web complètes, du front-end à la base de données.',
-    bullets: [
-      'Togo Truck Connect — plateforme de mise en relation pour le transport.',
-      'Eventia — billetterie, paiements et contrôle d’accès par QR code.',
-    ],
-    tags: ['React', 'NestJS', 'PostgreSQL', 'API REST'],
-  },
-  {
-    role: 'Développeur Full-Stack',
-    company: 'KofCorporation',
-    location: 'Agoè, Lomé',
-    period: 'Juin 2025 — Août 2025',
-    summary:
-      'Développement d’applications web de gestion avec React.js et FastAPI.',
-    bullets: [
-      'Application de gestion de projets et de tâches.',
-      'Application de gestion de produits avec interface React et API back-end.',
-    ],
-    tags: ['React', 'FastAPI', 'Python'],
-  },
-  {
-    role: 'Licence en Génie Logiciel',
-    company: 'Institut Polytechnique Defitech',
-    location: 'Lomé, Togo',
-    period: '2023 — 2026',
-    summary:
-      'Formation full-stack : développement web, bases de données, réseaux et génie logiciel.',
-    bullets: ['Projets académiques et personnels en équipe.', 'Spécialisation front-end & back-end.'],
-    tags: ['Génie logiciel', 'Bases de données', 'Réseaux'],
-  },
-] as const
-
-export const certifications = [
-  {
-    title: 'Gestion de projet, cloud & cybersécurité',
-    org: 'Coursera',
-    date: 'Nov. 2025',
-    type: 'Certification',
-  },
-  {
-    title: 'Leadership, discipline & compétences transversales',
-    org: 'Compassion International Togo',
-    date: 'Déc. 2025',
-    type: 'Atelier intensif',
-  },
-  {
-    title: 'Licence en Génie Logiciel',
-    org: 'Institut Polytechnique Defitech',
-    date: '2023 — 2026',
-    type: 'Diplôme',
   },
 ] as const
 

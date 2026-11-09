@@ -43,13 +43,10 @@ Tout le contenu personnel est centralisé dans un seul fichier :
 
 `src/data/profile.ts`
 
-- `profile` : nom, rôle, bio, téléphone, email, localisation, disponibilité, stats.
+- `profile` : nom, rôle, bio, téléphone, email, localisation.
 - `socials` : LinkedIn, GitHub, YouTube, Facebook, Instagram, TikTok.
 - `projects` : projets, descriptions, tags, liens et captures.
 - `services` : les 4 blocs de services.
-- `skillGroups` : compétences par catégorie.
-- `experience` : expériences professionnelles et formation.
-- `certifications` : diplômes et certifications.
 - `marqueeTech` : technologies du bandeau défilant.
 
 ### Remplacer les images
@@ -57,7 +54,7 @@ Tout le contenu personnel est centralisé dans un seul fichier :
 | Fichier | Usage |
 | --- | --- |
 | `public/photo-godson.jpg` | Portrait (section d'accueil) |
-| `public/projects/*.jpg` | Aperçus des projets (format 1200 × 800 conseillé) |
+| `public/projects/*.jpg` | Aperçus des projets (format 1200 × 900 conseillé) |
 | `public/CV_Esso-wazam_Godson_PATAM.pdf` | CV téléchargeable |
 
 Pour un nouveau projet : ajouter la capture dans `public/projects/`, puis une entrée dans
@@ -76,11 +73,10 @@ portfolio-godson/
 │  ├─ components/          # navbar, curseur, loader, animations, icônes…
 │  ├─ data/profile.ts      # tout le contenu
 │  ├─ lib/motion.ts        # courbes d'animation
-│  ├─ sections/            # Hero, About, Projects, Services, Skills, Experience, Contact
+│  ├─ sections/            # Hero, About, Projects, Services, Contact
 │  ├─ App.tsx
 │  ├─ index.css            # thème Tailwind, textures, animations
 │  └─ main.tsx
-├─ previews/               # captures de contrôle du rendu
 ├─ index.html
 └─ vite.config.ts
 ```
